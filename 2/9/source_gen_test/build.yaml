@@ -1,0 +1,15 @@
+targets:
+  $default:
+    builders:
+      # builder_example|num_builder:
+      #   generate_for:
+      #     - lib/*.dart
+      # builder_example|property_product:
+      #   generate_for:
+      #     - lib/*.dart
+      # builder_example|property_sum:
+      #   generate_for:
+      #     - lib/*.dart
+      # builder_example|property_multiply:
+      #   generate_for:
+      #     - lib/*.dart

@@ -1,0 +1,7 @@
+builders:
+  sassBuilder:
+    import: "package:build_test/builder.dart"
+    builder_factories: ["sassBuilder"]
+    build_extensions: { ".sass": [".css"], ".scss": [".css"] }
+    build_to: source
+    auto_apply: root_package

@@ -1,0 +1,30 @@
+builders:
+  # num_builder:
+  #   import: "package:builder_example/builder.dart"
+  #   builder_factories: ["myBuilder"]
+  #   build_extensions: { ".dart": [".info.dart"] }
+  #   auto_apply: dependents
+  #   build_to: source
+  # property_product:
+  #   import: "package:builder_example/builder.dart"
+  #   builder_factories: ["productBuilder"]
+  #   build_extensions: { ".dart": [".product.g.part"] }
+  #   auto_apply: dependents
+  #   build_to: cache
+  #   applies_builders: ["source_gen|combining_builder"]
+
+  property_sum:
+    import: "package:builder_example/builder.dart"
+    builder_factories: ["sumBuilder"]
+    build_extensions: { ".dart": [".sum.g.dart"] }
+    auto_apply: dependents
+    build_to: source
+    # applies_builders: ["source_gen|combining_builder"]
+
+  property_multiply:
+    import: "package:builder_example/builder.dart"
+    builder_factories: ["multiplyBuilder"]
+    build_extensions: { ".dart": [".multiply.g.dart"] }
+    auto_apply: dependents
+    build_to: source
+    # applies_builders: ["source_gen|combining_builder"]

@@ -1,0 +1,29 @@
+{
+  "@@last_modified": "2019-06-10T14:04:18.900591",
+  "helloMessage": "hello {msg}",
+  "@helloMessage": {
+    "description": "向某人打招呼",
+    "type": "text",
+    "placeholders": {
+      "msg": {}
+    }
+  },
+  "counterMessage": "{theNum,plural, =0{零}=1{壹}other{其他}}",
+  "@counterMessage": {
+    "description": "中文的 0 1",
+    "type": "text",
+    "placeholders": {
+      "theNum": {}
+    }
+  },
+  "getGenderMessage": "{gender,select, female{female}male{male.}other{other}}",
+  "@getGenderMessage": {
+    "description": "获取性别",
+    "type": "text",
+    "placeholders": {
+      "gender": {
+        "example": "male"
+      }
+    }
+  }
+}
